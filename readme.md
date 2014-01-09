@@ -16,9 +16,22 @@ npm install --save date-time
 
 ```js
 var dateTime = require('date-time');
+
 dateTime();
 //=> 2014-01-09 06:46:01 UTC
+
+dateTime(new Date(2050, 1, 2));
+//=> 2050-02-01 23:00:00 UTC
 ```
+
+## API
+
+### dateTime(date)
+
+#### date
+
+Type: `Date`  
+Default: `new Date()`
 
 
 ## License
