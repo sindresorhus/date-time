@@ -1,4 +1,4 @@
 'use strict';
-module.exports = function () {
-	return (new Date()).toISOString().replace(/T/, ' ').replace(/\..+/, ' UTC');
+module.exports = function (date) {
+	return (date || new Date()).toISOString().replace(/T/, ' ').replace(/\..+/, ' UTC');
 };
