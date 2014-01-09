@@ -1,6 +1,6 @@
 {
   "name": "date-time",
-  "version": "0.0.0",
+  "version": "0.1.0",
   "description": "Pretty UTC datetime: 2014-01-09 06:46:01 UTC",
   "license": "MIT",
   "repository": "sindresorhus/date-time",
