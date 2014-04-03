@@ -1,18 +1,16 @@
-# date-time [![Build Status](https://travis-ci.org/sindresorhus/date-time.png?branch=master)](http://travis-ci.org/sindresorhus/date-time)
+# date-time [![Build Status](https://travis-ci.org/sindresorhus/date-time.svg?branch=master)](https://travis-ci.org/sindresorhus/date-time)
 
 > Pretty UTC datetime: `2014-01-09 06:46:01 UTC`
 
 
 ## Install
 
-Install with [npm](https://npmjs.org/package/date-time)
-
-```
-npm install --save date-time
+```bash
+$ npm install --save date-time
 ```
 
 
-## Example
+## Usage
 
 ```js
 var dateTime = require('date-time');
@@ -23,6 +21,7 @@ dateTime();
 dateTime(new Date(2050, 1, 2));
 //=> 2050-02-01 23:00:00 UTC
 ```
+
 
 ## API
 
@@ -36,4 +35,4 @@ Default: `new Date()`
 
 ## License
 
-MIT © [Sindre Sorhus](http://sindresorhus.com)
+[MIT](http://opensource.org/licenses/MIT) © [Sindre Sorhus](http://sindresorhus.com)
