@@ -5,7 +5,7 @@
 
 ## Install
 
-```bash
+```sh
 $ npm install --save date-time
 ```
 
@@ -29,10 +29,10 @@ dateTime(new Date(2050, 1, 2));
 
 #### date
 
-Type: `Date`  
+Type: `date`  
 Default: `new Date()`
 
 
 ## License
 
-[MIT](http://opensource.org/licenses/MIT) © [Sindre Sorhus](http://sindresorhus.com)
+MIT © [Sindre Sorhus](http://sindresorhus.com)
