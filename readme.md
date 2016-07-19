@@ -16,21 +16,32 @@ $ npm install --save date-time
 const dateTime = require('date-time');
 
 dateTime();
-//=> '2014-01-09 06:46:01 UTC'
+//=> '2016-07-19 12:07:08 UTC'
 
-dateTime(new Date(2050, 1, 2));
-//=> '2050-02-01 23:00:00 UTC'
+dateTime('local');
+//=> '2016-07-19 12:07:08 UTC+5:30'
+
+dateTime(new Date(1994, 7, 3));
+//=> '1994-08-02 18:30:00 UTC'
+
+dateTime(new Date(1994, 7, 3), 'local');
+//=> '1994-08-02 18:30:00 UTC+5:30'
 ```
 
 
 ## API
 
-### dateTime([date])
+### dateTime([date],'local'])
 
 #### date
 
 Type: `date`  
 Default: `new Date()`
+
+#### date
+
+Type: `string`  
+Default: null
 
 
 ## License
