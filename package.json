@@ -26,8 +26,12 @@
     "utc",
     "iso",
     "timezone",
-    "zone"
+    "zone",
+    "timestamp"
   ],
+  "dependencies": {
+    "time-zone": "^0.1.0"
+  },
   "devDependencies": {
     "ava": "*",
     "xo": "*"
