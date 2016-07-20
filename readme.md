@@ -16,10 +16,10 @@ $ npm install --save date-time
 const dateTime = require('date-time');
 
 dateTime();
-//=> '2014-01-09 06:46:01 UTC'
+//=> '2016-07-20 10:27:33 UTC'
 
-dateTime(new Date(2050, 1, 2));
-//=> '2050-02-01 23:00:00 UTC'
+dateTime(new Date(1989, 2, 4, 10));
+//=> '1989-03-04 09:00:00 UTC'
 ```
 
 
@@ -29,10 +29,10 @@ dateTime(new Date(2050, 1, 2));
 
 #### date
 
-Type: `date`  
+Type: `Date`<br>
 Default: `new Date()`
 
 
 ## License
 
-MIT © [Sindre Sorhus](http://sindresorhus.com)
+MIT © [Sindre Sorhus](https://sindresorhus.com)

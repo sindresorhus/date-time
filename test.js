@@ -1,7 +1,6 @@
-'use strict';
-var assert = require('assert');
-var dateTime = require('./');
+import test from 'ava';
+import m from './';
 
-it('should print out pretty datetime', function () {
-	assert(/UTC$/.test(dateTime()));
+test(t => {
+	t.regex(m(), /^[\d-]+ [\d:]+ UTC$/);
 });
