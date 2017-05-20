@@ -1,17 +1,17 @@
 'use strict';
-var timeZone = require('time-zone');
+const timeZone = require('time-zone');
 
-module.exports = function (date, opts) {
+module.exports = (date, options) => {
 	date = date || new Date();
-	opts = opts || {};
+	options = options || {};
 
-	if (opts.local) {
-		// offset the date so it will return the correct value when getting the ISO string
+	if (options.local) {
+		// Offset the date so it will return the correct value when getting the ISO string
 		date = new Date(date.getTime() - (date.getTimezoneOffset() * 60000));
 	}
 
 	return date
 		.toISOString()
 		.replace(/T/, ' ')
-		.replace(/\..+/, ' UTC' + (opts.local ? timeZone(date) : ''));
+		.replace(/\..+/, ' UTC' + (options.local ? timeZone(date) : ''));
 };
