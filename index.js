@@ -1,9 +1,10 @@
 'use strict';
 const timeZone = require('time-zone');
 
-module.exports = (date, options) => {
-	date = date || new Date();
+module.exports = options => {
 	options = options || {};
+
+	let date = options.date || new Date();
 
 	if (options.local) {
 		// Offset the date so it will return the correct value when getting the ISO string

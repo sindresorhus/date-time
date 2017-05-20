@@ -18,17 +18,21 @@ const dateTime = require('date-time');
 dateTime();
 //=> '2016-07-20 11:24:28 UTC'
 
-dateTime(new Date(1989, 2, 4, 10));
+dateTime({date: new Date(1989, 2, 4, 10)});
 //=> '1989-03-04 09:00:00 UTC'
 
-dateTime(new Date(), {local: true});
+dateTime({local: true});
 //=> '2016-07-20 13:24:28 UTC+2'
 ```
 
 
 ## API
 
-### dateTime([date], [options])
+### dateTime([options])
+
+### options
+
+Type: `Object`
 
 #### date
 
@@ -36,10 +40,6 @@ Type: `Date`<br>
 Default: `new Date()`
 
 Custom date.
-
-### options
-
-Type: `Object`
 
 #### local
 
