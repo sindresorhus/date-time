@@ -1,6 +1,6 @@
 # date-time [![Build Status](https://travis-ci.org/sindresorhus/date-time.svg?branch=master)](https://travis-ci.org/sindresorhus/date-time)
 
-> Pretty UTC datetime: `2014-01-09 06:46:01 UTC`
+> Pretty datetime: `2014-01-09 06:46:01`
 
 
 ## Install
@@ -16,13 +16,19 @@ $ npm install --save date-time
 const dateTime = require('date-time');
 
 dateTime();
-//=> '2016-07-20 11:24:28 UTC'
+//=> '2017-05-20 17:07:05'
 
 dateTime({date: new Date(1989, 2, 4, 10)});
-//=> '1989-03-04 09:00:00 UTC'
+//=> '1989-03-04 09:00:00'
 
-dateTime({local: true});
-//=> '2016-07-20 13:24:28 UTC+2'
+dateTime({showTimeZone: true});
+//=> '2017-05-20 17:07:05 UTC+7'
+
+dateTime({local: false});
+//=> '2017-05-20 10:07:05'
+
+dateTime({local: false, showTimeZone: true});
+//=> '2017-05-20 10:07:05 UTC'
 ```
 
 
@@ -44,9 +50,16 @@ Custom date.
 #### local
 
 Type: `boolean`<br>
-Default: `false`
+Default: `true`
 
 Show the date in the local time zone.
+
+#### showTimeZone
+
+Type: `boolean`<br>
+Default: `false`
+
+Show the UTC time zone postfix.
 
 
 ## License

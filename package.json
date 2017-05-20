@@ -1,7 +1,7 @@
 {
   "name": "date-time",
   "version": "1.1.0",
-  "description": "Pretty UTC datetime: 2014-01-09 06:46:01 UTC",
+  "description": "Pretty datetime: `2014-01-09 06:46:01`",
   "license": "MIT",
   "repository": "sindresorhus/date-time",
   "author": {
