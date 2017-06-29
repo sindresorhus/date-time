@@ -29,6 +29,9 @@ dateTime({local: false});
 
 dateTime({local: false, showTimeZone: true});
 //=> '2017-05-20 10:07:05 UTC'
+
+dateTime({showMilliseconds: true});
+//=> '2017-05-20 17:07:05 6ms'
 ```
 
 
@@ -60,6 +63,13 @@ Type: `boolean`<br>
 Default: `false`
 
 Show the UTC time zone postfix.
+
+#### showMilliseconds
+
+Type: `boolean`<br>
+Default: `false`
+
+Show the milliseconds in the date if any.
 
 
 ## License

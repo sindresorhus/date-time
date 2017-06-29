@@ -5,7 +5,8 @@ module.exports = options => {
 	options = Object.assign({
 		date: new Date(),
 		local: true,
-		showTimeZone: false
+		showTimeZone: false,
+		showMilliseconds: false
 	}, options);
 
 	let date = options.date;
@@ -15,10 +16,18 @@ module.exports = options => {
 		date = new Date(date.getTime() - (date.getTimezoneOffset() * 60000));
 	}
 
-	const utcSymbol = ' UTC' + (options.local ? timeZone(date) : '');
+	let end = '';
+
+	if (options.showTimeZone) {
+		end = ' UTC' + (options.local ? timeZone(date) : '');
+	}
+
+	if (options.showMilliseconds && date.getUTCMilliseconds() > 0) {
+		end = ` ${date.getUTCMilliseconds()}ms${end}`;
+	}
 
 	return date
 		.toISOString()
 		.replace(/T/, ' ')
-		.replace(/\..+/, options.showTimeZone ? utcSymbol : '');
+		.replace(/\..+/, end);
 };
