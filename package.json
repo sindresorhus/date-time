@@ -13,10 +13,11 @@
     "node": ">=4"
   },
   "scripts": {
-    "test": "xo && ava"
+    "test": "xo && ava && tsd-check"
   },
   "files": [
-    "index.js"
+    "index.js",
+    "index.d.ts"
   ],
   "keywords": [
     "datetime",
@@ -34,6 +35,7 @@
   },
   "devDependencies": {
     "ava": "*",
+    "tsd-check": "^0.3.0",
     "xo": "*"
   }
 }
