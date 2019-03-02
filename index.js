@@ -1,7 +1,7 @@
 'use strict';
 const timeZone = require('time-zone');
 
-module.exports = options => {
+const dateTime = options => {
 	options = Object.assign({
 		date: new Date(),
 		local: true,
@@ -31,3 +31,6 @@ module.exports = options => {
 		.replace(/T/, ' ')
 		.replace(/\..+/, end);
 };
+
+module.exports = dateTime;
+module.exports.default = dateTime;
