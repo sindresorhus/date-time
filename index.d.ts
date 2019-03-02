@@ -1,37 +1,34 @@
-// Type definitions for date-time 2.1
-// Definitions by: Adam Zerella <https://github.com/adamzerella>
-
-interface DateTimeOptions {
+export interface Options {
 	/**
 	 * Custom date.
 	 *
-	 * @default Date;
+	 * @default new Date()
 	 */
 	date?: Date;
+
 	/**
 	 * Show the date in the local time zone.
 	 *
-	 * @default false;
+	 * @default false
 	 */
 	local?: boolean;
+
 	/**
 	 * Show the UTC time zone postfix.
 	 *
-	 * @default false;
+	 * @default false
 	 */
 	showTimeZone?: boolean;
+
 	/**
 	 * Show the milliseconds in the date if any.
 	 *
-	 * @default false;
+	 * @default false
 	 */
 	showMilliseconds?: boolean;
 }
 
 /**
- * Pretty datetime: 2014-01-09 06:46:01
- *
- * @param options - The options to configure date-time
- * @returns Date string
+ * Pretty datetime: `2014-01-09 06:46:01`
  */
-export default function(options?: DateTimeOptions): string;
+export default function dateTime(options?: Options): string;
