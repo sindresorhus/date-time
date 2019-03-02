@@ -9,7 +9,7 @@ module.exports = options => {
 		showMilliseconds: false
 	}, options);
 
-	let date = options.date;
+	let {date} = options;
 
 	if (options.local) {
 		// Offset the date so it will return the correct value when getting the ISO string
