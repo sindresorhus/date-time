@@ -33,4 +33,5 @@ const dateTime = options => {
 };
 
 module.exports = dateTime;
+// TODO: Remove this for the next major release
 module.exports.default = dateTime;
