@@ -1,5 +1,5 @@
-import {expectType} from 'tsd-check';
-import dateTime from '.';
+import {expectType} from 'tsd';
+import dateTime = require('.');
 
 expectType<string>(dateTime());
 expectType<string>(dateTime({date: new Date(1989, 2, 4, 10)}));
