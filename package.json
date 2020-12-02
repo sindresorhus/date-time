@@ -4,10 +4,11 @@
 	"description": "Pretty datetime: `2014-01-09 06:46:01`",
 	"license": "MIT",
 	"repository": "sindresorhus/date-time",
+	"funding": "https://github.com/sponsors/sindresorhus",
 	"author": {
 		"name": "Sindre Sorhus",
 		"email": "sindresorhus@gmail.com",
-		"url": "sindresorhus.com"
+		"url": "https://sindresorhus.com"
 	},
 	"engines": {
 		"node": ">=6"

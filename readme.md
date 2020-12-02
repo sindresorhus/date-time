@@ -1,14 +1,12 @@
-# date-time [![Build Status](https://travis-ci.org/sindresorhus/date-time.svg?branch=master)](https://travis-ci.org/sindresorhus/date-time)
+# date-time
 
 > Pretty datetime: `2014-01-09 06:46:01`
-
 
 ## Install
 
 ```
 $ npm install date-time
 ```
-
 
 ## Usage
 
@@ -34,44 +32,38 @@ dateTime({showMilliseconds: true});
 //=> '2017-05-20 17:07:05 6ms'
 ```
 
-
 ## API
 
-### dateTime([options])
+### dateTime(options?)
 
 ### options
 
-Type: `Object`
+Type: `object`
 
 #### date
 
-Type: `Date`<br>
+Type: `Date`\
 Default: `new Date()`
 
 Custom date.
 
 #### local
 
-Type: `boolean`<br>
+Type: `boolean`\
 Default: `true`
 
 Show the date in the local time zone.
 
 #### showTimeZone
 
-Type: `boolean`<br>
+Type: `boolean`\
 Default: `false`
 
 Show the UTC time zone postfix.
 
 #### showMilliseconds
 
-Type: `boolean`<br>
+Type: `boolean`\
 Default: `false`
 
 Show the milliseconds in the date if any.
-
-
-## License
-
-MIT © [Sindre Sorhus](https://sindresorhus.com)
