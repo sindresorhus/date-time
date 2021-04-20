@@ -11,7 +11,7 @@ $ npm install date-time
 ## Usage
 
 ```js
-const dateTime = require('date-time');
+import dateTime from 'date-time';
 
 dateTime();
 //=> '2017-05-20 17:07:05'

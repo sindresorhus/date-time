@@ -1,5 +1,5 @@
 import test from 'ava';
-import dateTime from '.';
+import dateTime from './index.js';
 
 test('main', t => {
 	t.regex(dateTime(), /^[\d-]+ [\d:]+$/);
